@@ -1,4 +1,10 @@
+import { useState } from "react";
+
 export default function NavBar() {
+  const [showing, setShowing] = useState<boolean>(false);
+
+  const display = showing ? "" : "hidden";
+
   return (
     <nav
       className="relative flex items-center justify-between w-full py-4 shadow-lg flex-nowrap bg-neutral-100 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start"
@@ -13,6 +19,7 @@ export default function NavBar() {
           aria-controls="navbarSupportedContent3"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => setShowing(!showing)}
         >
           <span className="[&>svg]:w-7">
             <svg
@@ -30,13 +37,10 @@ export default function NavBar() {
           </span>
         </button>
         <div
-          className="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+          className={`!visible ${display} flex-grow basis-[100%] items-center lg:!flex lg:basis-auto`}
           id="navbarSupportedContent3"
           data-te-collapse-item
         >
-          <a className="text-xl text-black" href="#">
-            Navbar
-          </a>
           {/* <!-- Left links --> */}
           <ul
             className="flex flex-col pl-0 mr-auto list-style-none lg:flex-row"
