@@ -7,7 +7,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className="relative flex items-center justify-between w-full py-4 shadow-lg flex-nowrap bg-neutral-100 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start"
+      className="relative flex items-center justify-between w-full py-4 bg-gray-900 bg-opacity-90 flex-nowrap text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start"
       data-te-navbar-ref
     >
       <div className="flex flex-wrap items-center justify-between w-full px-6">
@@ -37,7 +37,7 @@ export default function NavBar() {
           </span>
         </button>
         <div
-          className={`!visible ${display} flex-grow basis-[100%] items-center lg:!flex lg:basis-auto`}
+          className={`!visible ${display} flex-grow basis-[100%] items-center lg:!flex lg:basis-auto transition-all duration-100`}
           id="navbarSupportedContent3"
           data-te-collapse-item
         >
@@ -48,7 +48,7 @@ export default function NavBar() {
           >
             <li className="lg:px-2" data-te-nav-item-ref>
               <a
-                className="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                className="active disabled:text-black/30 lg:px-2 [&.active]:text-white"
                 aria-current="page"
                 href="/"
                 data-te-nav-link-ref
@@ -58,7 +58,7 @@ export default function NavBar() {
             </li>
             <li className="lg:pr-2" data-te-nav-item-ref>
               <a
-                className="p-0 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                className="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-white"
                 href="/about-me"
                 data-te-nav-link-ref
               >
@@ -67,7 +67,7 @@ export default function NavBar() {
             </li>
             <li className="lg:pr-2" data-te-nav-item-ref>
               <a
-                className="p-0 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                className="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-white"
                 href="/projects"
                 data-te-nav-link-ref
               >
@@ -77,7 +77,7 @@ export default function NavBar() {
             <li className="lg:pr-2" data-te-nav-link-ref>
               <a
                 href="/skills"
-                className="p-0 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                className="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-white"
                 data-te-nav-link-ref
               >
                 Skills
