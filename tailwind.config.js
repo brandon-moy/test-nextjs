@@ -9,6 +9,10 @@ module.exports = {
     extend: {
       colors: {
         dark: "rgb(33,37,41)",
+        mountain: "#4f7b91",
+        mshadow: "#304a58",
+        snow: "#ccc",
+        sshadow: "#bbb",
       },
       animation: {
         cycle: "cycle 20s linear infinite",
