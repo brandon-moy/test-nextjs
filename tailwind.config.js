@@ -13,6 +13,7 @@ module.exports = {
         mshadow: "#304a58",
         snow: "#ccc",
         sshadow: "#bbb",
+        main: "#1f303a",
       },
       animation: {
         cycle: "cycle 20s linear infinite",
