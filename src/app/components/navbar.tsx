@@ -51,6 +51,7 @@ export default function NavBar() {
                 className="active disabled:text-black/30 lg:px-2 [&.active]:text-white"
                 aria-current="page"
                 href="/"
+                id="home-link"
                 data-te-nav-link-ref
               >
                 Home
@@ -60,6 +61,7 @@ export default function NavBar() {
               <a
                 className="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-white"
                 href="/about-me"
+                id="about-link"
                 data-te-nav-link-ref
               >
                 About Me
@@ -69,6 +71,7 @@ export default function NavBar() {
               <a
                 className="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-white"
                 href="/projects"
+                id="projects-link"
                 data-te-nav-link-ref
               >
                 Projects
@@ -77,6 +80,7 @@ export default function NavBar() {
             <li className="lg:pr-2" data-te-nav-link-ref>
               <a
                 href="/skills"
+                id="skills-link"
                 className="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-white"
                 data-te-nav-link-ref
               >
