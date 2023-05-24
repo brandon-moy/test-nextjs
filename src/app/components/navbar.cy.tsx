@@ -14,19 +14,10 @@ describe("Render navbar", () => {
       cy.get("#skills-link").should("be.visible");
     });
 
-    it("About link should update href for about me page", () => {
-      cy.get("#about-link").should("have.attr", "href", "/about-me");
-    });
-
-    it("Home link should update href for home", () => {
+    it("Links should have correct href to navigate to pages", () => {
       cy.get("#home-link").should("have.attr", "href", "/");
-    });
-
-    it("Project link should update href for projects page", () => {
+      cy.get("#about-link").should("have.attr", "href", "/about-me");
       cy.get("#projects-link").should("have.attr", "href", "/projects");
-    });
-
-    it("Skills link should update href for skills page", () => {
       cy.get("#skills-link").should("have.attr", "href", "/skills");
     });
   });
