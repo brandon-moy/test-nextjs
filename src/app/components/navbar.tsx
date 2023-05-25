@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 export default function NavBar() {
@@ -47,7 +48,7 @@ export default function NavBar() {
             data-te-navbar-nav-ref
           >
             <li className="lg:px-2" data-te-nav-item-ref>
-              <a
+              <Link
                 className="active disabled:text-black/30 lg:px-2 [&.active]:text-white"
                 aria-current="page"
                 href="/"
@@ -55,37 +56,37 @@ export default function NavBar() {
                 data-te-nav-link-ref
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="lg:pr-2" data-te-nav-item-ref>
-              <a
+              <Link
                 className="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-white"
                 href="/about-me"
                 id="about-link"
                 data-te-nav-link-ref
               >
                 About Me
-              </a>
+              </Link>
             </li>
             <li className="lg:pr-2" data-te-nav-item-ref>
-              <a
+              <Link
                 className="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-white"
                 href="/projects"
                 id="projects-link"
                 data-te-nav-link-ref
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="lg:pr-2" data-te-nav-link-ref>
-              <a
+              <Link
                 href="/skills"
                 id="skills-link"
                 className="p-0 text-white hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-white"
                 data-te-nav-link-ref
               >
                 Skills
-              </a>
+              </Link>
             </li>
           </ul>
           {/* <!-- Left links --> */}

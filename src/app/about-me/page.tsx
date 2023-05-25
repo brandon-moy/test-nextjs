@@ -1,18 +1,9 @@
-import Image from "next/image";
+import Pic from "./pic";
 
 export default function AboutMe() {
   return (
     <div className="flex flex-wrap w-full sm:h-full lg:h-screen bg-main">
-      <div className="flex items-center justify-center sm:basis-full lg:basis-1/4">
-        <Image
-          width="500"
-          height="500"
-          alt="Picture of Brandon Moy"
-          src="/brandon-moy.jpg"
-          className="border border-4 rounded-full lg:ml-12 sm:w-1/6 lg:w-full border-bold aspect-square"
-          priority
-        ></Image>
-      </div>
+      <Pic />
       <div className="flex flex-col justify-center pl-12 sm:basis-full lg:basis-3/4">
         <p className="text-white">
           Hi 👋 I'm Brandon, a Software Developer based in Irvine, CA.
