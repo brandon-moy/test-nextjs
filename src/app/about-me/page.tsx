@@ -4,7 +4,10 @@ export default function AboutMe() {
   return (
     <div className="flex flex-wrap w-full sm:h-full lg:h-screen bg-main">
       <Pic />
-      <div className="flex flex-col justify-center pl-12 sm:basis-full lg:basis-3/4">
+      <div
+        id="text-container"
+        className="flex flex-col justify-center pl-12 sm:basis-full lg:basis-3/4"
+      >
         <p className="text-white">
           Hi 👋 I'm Brandon, a Software Developer based in Irvine, CA.
         </p>
