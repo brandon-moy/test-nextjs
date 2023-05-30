@@ -12,6 +12,19 @@ describe("Renders the About Me application page", () => {
       );
     });
 
-    it("Renders the page", () => {});
+    it("Renders the text information", () => {
+      cy.get("[data-testid=about-text-container]").should("be.visible");
+
+      cy.get("[data-testid=about-text-container] > p").should(($p) => {
+        expect($p).to.have.length(6);
+
+        expect($p[0]).to.be.visible;
+        expect($p[1]).to.be.visible;
+        expect($p[2]).to.be.visible;
+        expect($p[3]).to.be.visible;
+        expect($p[4]).to.be.visible;
+        expect($p[5]).to.be.visible;
+      });
+    });
   });
 });
