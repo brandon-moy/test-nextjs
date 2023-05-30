@@ -46,7 +46,3 @@ describe("Tests for the navlinks", () => {
     });
   });
 });
-
-// cy.get("#home-link").should("be.visible");
-//         cy.get("#projects-link").should("be.visible");
-//         cy.get("#skills-link").should("be.visible");
