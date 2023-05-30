@@ -14,15 +14,16 @@ describe("Renders the Home application page", () => {
 
     it("Renders the navbar", () => {
       it("Render links on the navbar", () => {
-        cy.get("#home-link").should("be.visible");
-        cy.get("#about-link").should("be.visible");
-        cy.get("#projects-link").should("be.visible");
-        cy.get("#skills-link").should("be.visible");
-
-        cy.get("#home-link").should("have.attr", "href", "/");
-        cy.get("#about-link").should("have.attr", "href", "/about-me");
-        cy.get("#projects-link").should("have.attr", "href", "/projects");
-        cy.get("#skills-link").should("have.attr", "href", "/skills");
+        cy.get("#home-link").should("be.visible").and("have.attr", "href", "/");
+        cy.get("#about-link")
+          .should("be.visible")
+          .and("have.attr", "href", "/about-me");
+        cy.get("#projects-link")
+          .should("be.visible")
+          .and("have.attr", "href", "/projects");
+        cy.get("#skills-link")
+          .should("be.visible")
+          .and("have.attr", "href", "/skills");
       });
     });
 
