@@ -34,19 +34,19 @@ describe("Renders the Home application page", () => {
     });
 
     it("Checks the animations", () => {
-      cy.get("[data-cy='animate-software-engineer']")
+      cy.get("[data-cy='animate-0']")
         .should("be.visible")
         .wait(4000, { log: false });
-      cy.get("[data-cy='animate-css-artist']")
+      cy.get("[data-cy='animate-1']")
         .should("be.visible")
         .wait(4000, { log: false });
-      cy.get("[data-cy='animate-front-end-dev']")
+      cy.get("[data-cy='animate-2']")
         .should("be.visible")
         .wait(4000, { log: false });
-      cy.get("[data-cy='animate-prog']")
+      cy.get("[data-cy='animate-3']")
         .should("be.visible")
         .wait(4000, { log: false });
-      cy.get("[data-cy='animate-web-dev']")
+      cy.get("[data-cy='animate-4']")
         .should("be.visible")
         .wait(4000, { log: false });
     });

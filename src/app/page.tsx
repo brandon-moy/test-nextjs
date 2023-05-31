@@ -11,31 +11,31 @@ export default function Home() {
       </h1>
       <div className="relative flex justify-center w-full pt-4">
         <span
-          data-cy="animate-software-engineer"
+          data-cy="animate-0"
           className="absolute text-2xl font-bold text-white opacity-0 animate-[cycle_20s_linear_infinite]"
         >
           Software Engineer
         </span>
         <span
-          data-cy="animate-css-artist"
+          data-cy="animate-1"
           className="absolute text-2xl font-bold text-white opacity-0 animate-[cycle_20s_linear_infinite_4s]"
         >
           CSS Artist
         </span>
         <span
-          data-cy="animate-front-end-dev"
+          data-cy="animate-2"
           className="absolute text-2xl font-bold text-white opacity-0 animate-[cycle_20s_linear_infinite_8s]"
         >
           Front-End Developer
         </span>
         <span
-          data-cy="animate-prog"
+          data-cy="animate-3"
           className="absolute text-2xl font-bold text-white opacity-0 animate-[cycle_20s_linear_infinite_12s]"
         >
           Programmer
         </span>
         <span
-          data-cy="animate-web-dev"
+          data-cy="animate-4"
           className="absolute text-2xl font-bold text-white opacity-0 animate-[cycle_20s_linear_infinite_16s]"
         >
           Web Developer
