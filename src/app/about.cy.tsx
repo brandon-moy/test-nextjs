@@ -13,9 +13,9 @@ describe("Renders the About Me application page", () => {
     });
 
     it("Renders the text information", () => {
-      cy.get("[data-testid=about-text-container]").should("be.visible");
+      cy.get("[data-cy='about-text-container']").should("be.visible");
 
-      cy.get("[data-testid=about-text-container] > p").should(($p) => {
+      cy.get("[data-cy='about-text-container'] > p").should(($p) => {
         expect($p).to.have.length(6);
 
         expect($p[0]).to.be.visible;
