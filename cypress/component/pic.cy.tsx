@@ -1,5 +1,5 @@
 import * as ImageComponent from "next/image";
-import Pic from "./pic";
+import Pic from "../../src/app/about-me/pic";
 
 describe("<Pic />", () => {
   describe("mock image with `cy.intercept`", () => {

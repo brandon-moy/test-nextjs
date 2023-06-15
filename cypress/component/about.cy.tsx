@@ -1,5 +1,5 @@
-import AboutMe from "./about-me/page";
-import RootLayout from "./layout";
+import AboutMe from "../../src/app/about-me/page";
+import RootLayout from "../../src/app/layout";
 
 describe("Renders the About Me application page", () => {
   context("1280p resolution", () => {

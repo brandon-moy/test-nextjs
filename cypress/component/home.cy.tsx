@@ -1,5 +1,5 @@
-import RootLayout from "./layout";
-import Home from "./page";
+import RootLayout from "../../src/app/layout";
+import Home from "../../src/app/page";
 
 describe("Renders the Home application page", () => {
   context("1280p resolution", () => {

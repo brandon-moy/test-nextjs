@@ -1,4 +1,4 @@
-import NavBar from "./navbar";
+import NavBar from "../../src/app/components/navbar";
 
 describe("Render navbar", () => {
   context("1280p resolution", () => {
